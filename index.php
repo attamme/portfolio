@@ -1,0 +1,52 @@
+<?php
+
+$pageTitle ="Home";
+require __DIR__ . "/partials.php";
+render_header($pageTitle);
+
+?>
+
+<section class="page">
+
+    <div class="hero">
+        <div class="hero-left">
+            <!-- replace with real image -->
+            <div class="image-box image-tall">
+                <img src="/images/me1.png" alt="Hero image">
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <h1>Hey</h1>
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="tiles">
+                <a href="https://github.com/attamme/raamatupood" class="tile-link" target="_blank">
+                    <article class="tile">
+                        <div class="image-box image-wide">
+                            <img src="/images/demo.jpg" alt="Project 1"> <!-- project 1 -->
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </article>
+                </a>
+
+                <a href="https://github.com/yourusername/project-repo-2" class="tile-link" target="_blank">
+                    <article class="tile">
+                        <div class="image-box image-wide">
+                            <img src="/images/demo.jpg" alt="Project preview 2"> <!-- project 2 -->
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php render_footer(); ?>
