@@ -29,18 +29,18 @@ render_header($pageTitle);
                             <img src="/images/demo.jpg" alt="Project 1"> <!-- project 1 -->
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Online book store
                         </p>
                     </article>
                 </a>
 
-                <a href="https://github.com/yourusername/project-repo-2" class="tile-link" target="_blank">
+                <a href="https://github.com/attamme/portfolio" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
                             <img src="/images/demo.jpg" alt="Project preview 2"> <!-- project 2 -->
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Portfolio
                         </p>
                     </article>
                 </a>

@@ -15,7 +15,7 @@ function render_header(string $pageTitle): void { ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> <?= htmlspecialchars($pageTitle) ?> </title>
+    <title> Tamme portfolio - <?= htmlspecialchars($pageTitle) ?> </title>
     <link rel="stylesheet" href="styles.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
