@@ -23,7 +23,7 @@
     --card-bg: #ffffff;
     --text-main: #111111;
     --text-muted: #3a3a3a;
-    --line: rgba(0,0,0, .08);
+    --line: rgba(0,0,0, .12);
 }
 
 /* background */
@@ -31,98 +31,109 @@
     box-sizing: border-box;
 }
 html, body {
-    margin: 0; padding: 0;
+    height: 100%;
 }
 body {
+    margin: 0;
     background: var(--bg);
     color: var(--text-main);
-    font-family: "Harmattan", sans-serif;
-}
-
-/* text */
-h1, h2, h3 {
-    font-family: "Assistant", sans-serif;
-    margin: 0 0 10px 0;
-}
-h1 {
-    font-size: 120px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 20px;
-    line-height: 1;
-}
-p {
-    margin: 0 0 12px 0;
+    font-family: "Harmattan", system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     font-size: 16px;
     line-height: 1.35;
 }
 
-.wrap {
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0 18px;
+/* text */
+h1, h2, h3 {
+    font-family: "Assistant", system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    margin: 0 0 .0.25rem 0;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+p {
+    margin: 0 0 1rem 0;
+    color: var(--text-muted);
+}
+a {
+    color: inherit;
 }
 
-/* header */
-.header {
-    padding: 16px 0;
-    background: var(--c200);
-}
-.header_inner {
+/* vertical nav */
+.layout-container {
     display: flex;
-    justify-content: center;
-    padding: 0 40px;
+    min-height: 100%;
 }
 
-/* navbar */
-.nav {
-    display: flex;
+.sidebar {
+    background-color: var(--c200);
+    border-right: 1px solid var(--line);
+    padding: 14px 12px;
     align-items: center;
-    justify-content: space-around;
-    gap: 30px;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar .nav-vertical {
+    margin-top: 18px;
+    display: grid;
+    gap: 10px;
 }
 
 .pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 60px;
-    border-radius: 15px;
-    background: rgba(0,0,0, .08);
-    text-decoration: none;
-    color: #111;
-    font-weight: 600;
+    all: unset;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 56px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255, .55);
+    box-shadow: 0 6px 16px rgba(0,0,0, .06);
+    transition:transform .12s ease, background .12s ease;
+    text-align: center;
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .02em;
 }
 
-.nav .pill {
-    flex: 0 1 200px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
+.pill:hover {
+    transform: translateY(-1px);
 }
 
 .pill.active {
-    background: var(--g700);
+    background: linear-gradient(180deg, var(--g700), var(--g300));
+    /* background: var(--g700); */
     color: var(--c100);
+    border: rgba(255,255,255, .88);
 }
 
-.pill:hover:not(.active) {
-    background: var(--g300);
-    color: var(--g900);
-    transition: background 0.3s ease;
+.main-content {
+    flex: 1;
+    padding: 40px;
+    max-width: 95%;
 }
 
 .page {
     padding: 18px 0 30px;
 }
 .top-strip {
-    height: 56px;
-    border-radius: 14px;
-    background: rgba(0,0,0, .06);
-    margin-bottom: 18px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    letter-spacing: .02em;
+    margin:0 auto 16px;
 }
 
 .card {
@@ -141,15 +152,22 @@ p {
     margin: 0 auto;
 }
 
+.hero-right{
+    border-radius: 22px;
+    background: rgba(255,255,255,.8);
+    border: 1px solid var(--line);
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    overflow:hidden;
+    height: calc(100vh - 160px);
+    display:flex;
+    flex-direction:column;
+    padding: 20px;
+    }
+
 .lead {
     font-size: 18px;
-    max-width: 600px;
+    max-width: 95%;
     margin-bottom: 40px;
-}
-
-.hero-right .lead {
-    max-width: 520px;
-    color: #222;
 }
 
 .tiles {
@@ -159,8 +177,10 @@ p {
 }
 
 .tile {
-    border-radius: 4px;
+    border-radius: 22px;
     background: var(--c200);
+    border: 1px solid var(--line);
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
     padding: 20px;
     transition: box-shadow 0.3s ease;
     cursor: pointer;

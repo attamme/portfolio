@@ -44,6 +44,17 @@ render_header($pageTitle);
                         </p>
                     </article>
                 </a>
+
+                <a href="https://github.com" class="tile-link" target="_blank">
+                    <article class="tile">
+                        <div class="image-box image-wide">
+                            <img src="/images/demo.jpg" alt="Project 3"> <!-- project 3 -->
+                        </div>
+                        <p>
+                            Project 3
+                        </p>
+                    </article>
+                </a>
             </div>
         </div>
     </div>

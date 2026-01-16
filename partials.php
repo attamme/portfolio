@@ -24,18 +24,23 @@ function render_header(string $pageTitle): void { ?>
 </head>
 <body>
 
-<header class="header">
-    <div class=" header-inner">
-        <nav class="nav">
-            <?= nav_item("index.php", "Home") ?>
-            <?= nav_item("projects.php", "Projects") ?> 
-            <?= nav_item("aboutme.php", "About") ?> 
-            <?= nav_item("contact.php", "Contact") ?> 
-        </nav>
-    </div>
-</header>
+<div class="layout-container"> 
 
-<main class="wrap">
+<!-- nav on the side -->
+<aside class="sidebar">
+    <nav class="nav-vertical">
+        <?= nav_item("index.php", "Home") ?>
+        <?= nav_item("projects.php", "Projects") ?> 
+        <?= nav_item("aboutme.php", "About") ?> 
+        <?= nav_item("contact.php", "Contact") ?> 
+    </nav>
+</aside>
+
+<main class="main-content">
+
+<div class="top-strip">
+    Annaliisa Tamme
+</div>
 
 <?php }
 
@@ -43,6 +48,7 @@ function render_header(string $pageTitle): void { ?>
 function render_footer(): void { ?>
 
 </main>
+</div>
 
 <footer class="footer">
     <div class="wrap footer-inner">
