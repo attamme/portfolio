@@ -16,7 +16,7 @@ function render_header(string $pageTitle): void { ?>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> Tamme portfolio - <?= htmlspecialchars($pageTitle) ?> </title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>" /> <!-- should help with cpanel reading the css file hopefully -->
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
