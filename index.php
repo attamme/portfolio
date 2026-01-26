@@ -12,7 +12,7 @@ render_header($pageTitle);
         <div class="hero-left">
             <!-- replace with real image -->
             <div class="image-box image-tall">
-                <img src="/images/me1.png" alt="Hero image">
+                <img src="images/me1.png" alt="Hero image">
             </div>
         </div>
 
@@ -26,7 +26,7 @@ render_header($pageTitle);
                 <a href="https://github.com/attamme/raamatupood" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
-                            <img src="/images/demo.jpg" alt="Project 1"> <!-- project 1 -->
+                            <img src="images/demo.jpg" alt="Project 1"> <!-- project 1 -->
                         </div>
                         <p>
                             Online book store
