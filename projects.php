@@ -10,21 +10,21 @@ $projects = [
         "title" => "Online Book Store",
         "desc" => "A full-stack application for browsing and purchasing books.",
         "link" => "https://github.com/attamme/raamatupood",
-        "img" => "/images/demo.jpg"
+        "img" => "images/demo.jpg"
     ],
 
     [
         "title" => "Portfolio site",
         "desc" => "This same porfolio site developed with PHP and custom CSS",
         "link" => "https://github.com/attamme/portfolio",
-        "img" => "/images/demo.jpg"
+        "img" => "images/demo.jpg"
     ],
 
     [
         "title" => "Project 3",
         "desc" => "Description for the third project",
         "link" => "https://github.com/attamme",
-        "img" => "/images/demo.jpg"
+        "img" => "images/demo.jpg"
     ]
 ];
 

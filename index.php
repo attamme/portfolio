@@ -37,7 +37,7 @@ render_header($pageTitle);
                 <a href="https://github.com/attamme/portfolio" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
-                            <img src="/images/demo.jpg" alt="Project preview 2"> <!-- project 2 -->
+                            <img src="images/demo.jpg" alt="Project preview 2"> <!-- project 2 -->
                         </div>
                         <p>
                             Portfolio
@@ -48,7 +48,7 @@ render_header($pageTitle);
                 <a href="https://github.com/attamme" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
-                            <img src="/images/demo.jpg" alt="Project 3"> <!-- project 3 -->
+                            <img src="images/demo.jpg" alt="Project 3"> <!-- project 3 -->
                         </div>
                         <p>
                             Project 3

@@ -9,7 +9,7 @@ render_header($pageTitle);
         <div class="hero-main">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="/images/me1.png" alt="Annaliisa Tamme">
+                    <img src="images/me1.png" alt="Annaliisa Tamme">
                 </div>
 
                 <div class="about-text">
