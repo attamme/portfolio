@@ -16,7 +16,7 @@ render_header($pageTitle);
             </div>
         </div>
 
-        <div class="hero-right">
+        <div class="hero-main">
             <h1>Hey</h1>
             <p class="lead">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -45,7 +45,7 @@ render_header($pageTitle);
                     </article>
                 </a>
 
-                <a href="https://github.com" class="tile-link" target="_blank">
+                <a href="https://github.com/attamme" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
                             <img src="/images/demo.jpg" alt="Project 3"> <!-- project 3 -->

@@ -47,15 +47,14 @@ function render_header(string $pageTitle): void { ?>
 /* footer */
 function render_footer(): void { ?>
 
-</main>
-</div>
-
 <footer class="footer">
     <div class="wrap footer-inner">
         <span>© <?= date("Y") ?> </span>
     </div>
 </footer>
 
+</main>
+</div>
 </body>
 </html>
 
