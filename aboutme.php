@@ -23,7 +23,9 @@ render_header($pageTitle);
                     </div>
 
                     <h1>About Me</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="lead">
+                        Hi again! My name is Annaliisa Tamme (also go by Lily) and I'm a 20 year old student at Tartu Vocational College (VOCO). Currently I am on my third year of studying software development, learning new things on a daily basis. 
+                    </p>
                     
                     <h3>Technical Skills</h3>
                     <div class="skill-tags">
@@ -32,7 +34,10 @@ render_header($pageTitle);
                     </div>
 
                     <h3>The Story</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>I was first introduced to software development in my previous high school, where they offered "Basics to programming" course. As I signed up for it, I had no experience to programming of any sorts and did not know, what to expect. When I wrote my first ever "Hello World!" in HTML, I was fascinated by how "magical" it felt like. There I learned the basics of HTML/CSS and PHP. After that I signed up to couple more courses offered by universities, where they focused on Python. As I become more interested in programming, I decided to specifically learn it, and that's how I became a student at VOCO.
+                    Contrary to the stereotype of programmes "not touching grass", I frankly enjoy going outside on walks and make it my daily habit.
+                    During my free time I have picked up painting.
+                    </p>
                 </div>
             </div>
         </div>

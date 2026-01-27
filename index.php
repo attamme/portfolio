@@ -19,7 +19,7 @@ render_header($pageTitle);
         <div class="hero-main">
             <h1>Hey</h1>
             <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Welcome to my portfolio! Here you can find projects I have worked on and also learn about me more.
             </p>
 
             <div class="tiles">

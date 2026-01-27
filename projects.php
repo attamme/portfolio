@@ -15,7 +15,7 @@ $projects = [
 
     [
         "title" => "Portfolio site",
-        "desc" => "This same porfolio site developed with PHP and custom CSS",
+        "desc" => "This same portfolio site developed with PHP and custom CSS",
         "link" => "https://github.com/attamme/portfolio",
         "img" => "images/demo.jpg"
     ],
