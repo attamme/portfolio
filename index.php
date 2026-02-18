@@ -10,7 +10,6 @@ render_header($pageTitle);
 
     <div class="hero">
         <div class="hero-left">
-            <!-- replace with real image -->
             <div class="image-box image-tall">
                 <img src="images/me1.png" alt="Hero image">
             </div>
@@ -19,25 +18,15 @@ render_header($pageTitle);
         <div class="hero-main">
             <h1>Hey</h1>
             <p class="lead">
-                Welcome to my portfolio! Here you can find projects I have worked on and also learn about me more.
+                Welcome to my portfolio! Here you can find projects I have worked on and also learn about me more. On this home page you can see featured works of mine.
             </p>
 
             <div class="tiles">
-                <a href="https://github.com/attamme/raamatupood" class="tile-link" target="_blank">
-                    <article class="tile">
-                        <div class="image-box image-wide">
-                            <img src="images/demo.jpg" alt="Project 1"> <!-- project 1 -->
-                        </div>
-                        <p>
-                            Online book store
-                        </p>
-                    </article>
-                </a>
 
                 <a href="https://github.com/attamme/portfolio" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
-                            <img src="images/demo.jpg" alt="Project preview 2"> <!-- project 2 -->
+                            <img src="images/portfolio.png" alt="Project preview 1"> <!-- project 1 -->
                         </div>
                         <p>
                             Portfolio
@@ -45,13 +34,13 @@ render_header($pageTitle);
                     </article>
                 </a>
 
-                <a href="https://github.com/attamme" class="tile-link" target="_blank">
+                <a href="https://github.com/attamme/messaging-app" class="tile-link" target="_blank">
                     <article class="tile">
                         <div class="image-box image-wide">
-                            <img src="images/demo.jpg" alt="Project 3"> <!-- project 3 -->
+                            <img src="images/messaging_app.png" alt="Project 2"> <!-- project 2 -->
                         </div>
                         <p>
-                            Project 3
+                            Messaging app
                         </p>
                     </article>
                 </a>

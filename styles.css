@@ -193,32 +193,50 @@ a {
     border: 1px solid var(--line);
     box-shadow: 0 10px 24px rgba(0,0,0,.06);
     padding: 20px;
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     height: 100%;
-    width: 100%;
+    position: relative;
 }
 .tile p {
     font-size: 14px;
     color: #222;
     margin-top: 10px;
 }
-.tile-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.tile-link:hover {
+.tile:hover {
     transform: translateY(-5px);
-}
-.tile-link:hover .tile {
     box-shadow: 0 10px 20px rgba(40, 54, 24, 0.2);
     border-color: var(--g700);
 }
-.tile-link:hover .image-wide img {
-    transform: scale(1.05);
-    transition: transform 0.5s ease;
+.project-actions {
+    margin-top: auto;
+    padding-top: 15px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tile:hover .project-actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+.project-link {
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--g700);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.project-link:hover {
+    color: var(--o700);
+    text-decoration: underline;
+}
+
+.sep {
+    color: var(--line);
+    font-size: 12px;
 }
 
 /* image */
