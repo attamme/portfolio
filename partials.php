@@ -17,6 +17,7 @@ function render_header(string $pageTitle): void { ?>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> Tamme portfolio - <?= htmlspecialchars($pageTitle) ?> </title>
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>" /> <!-- should help with cpanel reading the css file hopefully -->
+    <link rel="stylesheet" href="styles_mobile.css?v=<?php echo time(); ?>" media="screen and (max-width: 768px)" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,13 @@ function render_header(string $pageTitle): void { ?>
 
 <!-- nav on the side -->
 <aside class="sidebar">
-    <nav class="nav-vertical">
+
+    <div class="sidebar-header">
+        <span class="mobile-logo">Annaliisa Tamme</span>
+        <button class="hamburger" id="mobile-toggle">☰</button>
+    </div>
+
+    <nav class="nav-vertical" id="nav-menu">
         <?= nav_item("index.php", "Home") ?>
         <?= nav_item("projects.php", "Projects") ?> 
         <?= nav_item("aboutme.php", "About") ?> 
@@ -55,6 +62,26 @@ function render_footer(): void { ?>
 
 </main>
 </div>
+
+<script>
+    const toggle = document.getElementById("mobile-toggle");
+    const menu = document.getElementById("nav-menu");
+
+    if (toggle && menu) {
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            toggle.textContent = menu.classList.contains("active") ? "✕" : "☰";
+        });
+
+        document.querySelectorAll(".nav-vertical a").forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.remove("active");
+                toggle.textContent = "☰";
+            });
+        });
+    }
+</script>
+
 </body>
 </html>
 
