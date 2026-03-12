@@ -36,9 +36,15 @@ $projects = [
         "github" => "https://github.com/attamme/furniture-app",
         "live" => null,
         "img" => "images/demo.jpg"
+    ],
+
+    [
+        "title" => "Crisis behaviour",
+        "desc" => "A small game to learn about how to act during different crisis situations",
+        "github" => "https://github.com/attamme/kriisi_olukorrad",
+        "live" => "https://kriisiolukorrad.atamme.ee",
+        "img" => "images/kriisiolukorrad.png"
     ]
-
-
 ];
 
 ?>
