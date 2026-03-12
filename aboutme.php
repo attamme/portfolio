@@ -24,19 +24,17 @@ render_header($pageTitle);
 
                     <h1>About Me</h1>
                     <p class="lead">
-                        Hi again! My name is Annaliisa Tamme (also go by Lily) and I'm a 20 year old student at Tartu Vocational College (VOCO). Currently I am on my third year of studying software development, learning new things on a daily basis. 
+                        I am a 20-year-old software development student at Tartu Vocational College (VOCO) with a passion for building clean, functional, and user-centric web applications. My journey into the world of tech started back in primary school when I was first introduced to a 'Basics of Programming' course. Writing my first "Hello World!" in HTML sparked a fascination that has only grown stronger over the years. 
+                    <br>
+                        Currently I am in my third year of studies, where I focus on mastering the fundamentals of software development and exploring various programming languages and technologies. I enjoy the logic-heavy challenges of backend development while also the creative aspect of software development. When I'm not coding, I enjoy going on walks and from time to time painting.
                     </p>
                     
                     <h3>Technical Skills</h3>
-                    <div class="skill-tags">
-                        <span class="tag">PHP/ </span><span class="tag">CSS</span>
-                        <span class="tag">JavaScript </span><span class="tag">SQL</span>
-                    </div>
-
-                    <h3>The Story</h3>
-                    <p>I was first introduced to software development in my previous high school, where they offered "Basics to programming" course. As I signed up for it, I had no experience to programming of any sorts and did not know, what to expect. When I wrote my first ever "Hello World!" in HTML, I was fascinated by how "magical" it felt like. There I learned the basics of HTML/CSS and PHP. After that I signed up to couple more courses offered by universities, where they focused on Python. As I become more interested in programming, I decided to specifically learn it, and that's how I became a student at VOCO.
-                    Contrary to the stereotype of programmes "not touching grass", I frankly enjoy going outside on walks and make it my daily habit.
-                    During my free time I have picked up painting.
+                    <p class="lead">
+                        Programming languages: JavaScript, Python, PHP, TypeScript, SQL<br>
+                        Web development: React, Node.js, Express, HTML, CSS<br>
+                        Databases: MySQL, MariaDB<br>
+                        Version control: Git
                     </p>
                 </div>
             </div>
